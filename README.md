@@ -1,5 +1,5 @@
 # express-HTTPS-server
-A Express HTTPS server
+An Express HTTPS server
 
 git bash: openssl to create certificate files
 - openssl genrsa -out [privatekey_filename].pem 1024
