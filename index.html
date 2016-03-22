@@ -1,0 +1,35 @@
+<html>
+	<title>
+		Express HTTPS server
+	</title>
+
+	<head>
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<script>
+			function sendajax(){
+				var data = {
+						username: "111",
+						password: "aaa"
+					};
+				$.ajax({
+					url: "/post",
+					type: 'post',
+					contentType: 'application/json; charset=utf-8', // Type of data sent to server
+					dataType: 'json',
+					data: JSON.stringify(data),
+					success: function(res){
+						console.log(res);
+					}
+
+				});
+			}
+		</script>
+	</head>
+
+	<body>
+		<button onclick="sendajax()">ajax</button>
+
+
+	</body>
+
+</html>
